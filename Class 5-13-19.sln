@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class 5-13-19", "Class 5-13-19\Class 5-13-19.csproj", "{0915F762-9C4D-4ECF-9552-086D13AE0888}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LakewoodScoop.Data", "LakewoodScoop.Data\LakewoodScoop.Data.csproj", "{8C30D16F-076A-43A4-8339-534BB4B7899B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0915F762-9C4D-4ECF-9552-086D13AE0888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0915F762-9C4D-4ECF-9552-086D13AE0888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0915F762-9C4D-4ECF-9552-086D13AE0888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C30D16F-076A-43A4-8339-534BB4B7899B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C30D16F-076A-43A4-8339-534BB4B7899B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C30D16F-076A-43A4-8339-534BB4B7899B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C30D16F-076A-43A4-8339-534BB4B7899B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

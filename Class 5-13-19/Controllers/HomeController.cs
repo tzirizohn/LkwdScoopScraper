@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;  
 using Class_5_13_19.Models;
+using Newtonsoft.Json.Linq;
+
+using Microsoft.AspNetCore.Mvc;
+using LakewoodScoop.Data;
 
 namespace Class_5_13_19.Controllers
 {
@@ -12,32 +15,10 @@ namespace Class_5_13_19.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            LkwdScoop ls = new LkwdScoop();
+            IEnumerable<LakewoodScoopPost> posts = ls.ScrapeLS();
+            return View(posts);
         }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+       
     }
 }
